@@ -14,8 +14,8 @@ The implementation follows the accompanying paper. This README focuses on instal
 Python 3.10 or later is recommended.
 
 ```bash
-git clone <repository-url>
-cd AdaRCG_OpenSource
+git clone https://github.com/QilinLi147/AdaRCG.git
+cd AdaRCG
 python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
@@ -149,7 +149,6 @@ The five-band order is delta, theta, alpha, beta and gamma. Altering channel ord
 ## 8. Minimal code check
 
 ```bash
-python -m unittest discover -s tests -v
 python -m adarcg.prepare --help
 python -m adarcg.run --help
 python -m adarcg.evaluate --help
